@@ -1,4 +1,4 @@
-@import "social-btns.css";
+@import "btns.css";
 
 body {
   font-family: monospace;
@@ -6,19 +6,21 @@ body {
   margin: 0; 
 }
 
-body.dark-theme {
-  color: #eee;
-  background: #121212;
-}
-body.dark-theme a {
-  color: #809fff;
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+
+  body a {
+    color: #809fff;
+  }
 }
 
 .home {
   background: #333;
   height: 100vh;
   position: relative;
-  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
