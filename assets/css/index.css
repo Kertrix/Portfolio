@@ -1,0 +1,109 @@
+@import "social-btns.css";
+
+body {
+  font-family: monospace;
+  padding: 0;
+  margin: 0; 
+}
+
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme a {
+  color: #809fff;
+}
+
+.home {
+  background: #333;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-title {
+  color: #fff;
+}
+
+#print {
+  color: lime;
+}
+
+.header-subtitle {
+  color: white;
+  text-transform: uppercase;
+}
+
+.header-btn{
+  position: relative;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #ff7675;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.header-btn::before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.header-btn::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.header-btn:hover::before{
+  height: 1000%;
+}
+
+.typed-cursor {
+  color: lime;
+  font-size: 2rem;
+}
+
+.skills-content {
+  padding-top: 10px;
+}
+
+.bar {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skill {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.python {width: 90%; background-color: #04AA6D;}
+.html {width: 60%; background-color: #04AA6D;}
+.css {width: 50%; background-color: #04AA6D;}
+.js {width: 35%; background-color: #04AA6D;}
+.java {width: 10%; background-color: #04AA6D;}
