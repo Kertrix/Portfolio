@@ -101,28 +101,73 @@ body {
 .python {
   width: 90%;
   background-color: #04AA6D;
+  animation: load_python 3s normal forwards;
 }
 
 .html {
   width: 60%;
   background-color: #04AA6D;
+  animation: load_html 3s normal forwards;
 }
 
 .css {
   width: 50%;
   background-color: #04AA6D;
+  animation: load_css 3s normal forwards;
 }
 
 .js {
   width: 35%;
   background-color: #04AA6D;
+  animation: load_js 3s normal forwards;
 }
 
 .java {
   width: 10%;
   background-color: #04AA6D;
+  animation: load_java 3s normal forwards;
 }
 
+@keyframes load_python {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes load_html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes load_css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes load_js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@keyframes load_java {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10%;
+  }
+}
 .btns {
   display: inline-block;
   width: 50px;

@@ -1,3 +1,11 @@
+$python: 90%;
+$html: 60%;
+$css: 50%;
+$js: 35%;
+$java: 10%;
+$bar-color: #04AA6D;
+
+
 .skills-content {
     padding-top: 10px;
   }
@@ -14,11 +22,36 @@
     color: white;
 }
 
-.python {width: 90%; background-color: #04AA6D;}
-.html {width: 60%; background-color: #04AA6D;}
-.css {width: 50%; background-color: #04AA6D;}
-.js {width: 35%; background-color: #04AA6D;}
-.java {width: 10%; background-color: #04AA6D;}
+.python {width: $python; background-color: $bar-color; animation: load_python 3s normal forwards;}
+.html {width: $html; background-color: $bar-color; animation: load_html 3s normal forwards;}
+.css {width: $css; background-color: $bar-color; animation: load_css 3s normal forwards;}
+.js {width: $js; background-color: $bar-color; animation: load_js 3s normal forwards;}
+.java {width: $java; background-color: $bar-color; animation: load_java 3s normal forwards;}
+
+@keyframes load_python {
+    0% { width: 0; }
+    100% { width: $python; }
+}
+
+@keyframes load_html {
+    0% { width: 0; }
+    100% { width: $html; }
+  }
+
+@keyframes load_css {
+    0% { width: 0; }
+    100% { width: $css; }
+}
+
+@keyframes load_js {
+    0% { width: 0; }
+    100% { width: $js; }
+}
+
+@keyframes load_java {
+    0% { width: 0; }
+    100% { width: $java; }
+}
 
 .btns {
     display: inline-block;
