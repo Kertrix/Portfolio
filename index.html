@@ -103,13 +103,28 @@
                     <p class="card-text">I use IDEs like Visual Studio Code so I can work in a good environment.</p>
                 </div>
             </div>
-            <div data-aos="zoom-in" class="row pt-4" id="links">
-                <h3 class="fs-3">Links</h3>
-                <button class="btns social" onclick="window.open('https://github.com/kertrix','_blank')"><i class="fab fa-github"></i></button>
-                <button class="btns social" onclick="window.open('https://gitlab.com/kertrix','_blank')"><i class="fab fa-gitlab"></i></button>
-                <button class="btns social" onclick="window.open('https://dev.to/kertrix','_blank')"><i class="fab fa-dev"></i></button>
-                <button class="btns social" onclick="window.open('https://stackoverflow.com/users/16922031/kertrix','_blank')"><i class="fab fa-stack-overflow"></i></button>
-                <button class="btns social" onclick="navigator.clipboard.writeText('kertrix.github.io'); alert('Link copied')"><i class="fas fa-link"></i></button> 
+            <div class="row pt-4" id="contact">
+                <div class="col-4" data-aos="zoom-in">
+                    <h3 class="fs-3">Links</h3>
+                    <button class="btns social" onclick="window.open('https://github.com/kertrix','_blank')"><i class="fab fa-github"></i></button>
+                    <button class="btns social" onclick="window.open('https://gitlab.com/kertrix','_blank')"><i class="fab fa-gitlab"></i></button>
+                    <button class="btns social" onclick="window.open('https://dev.to/kertrix','_blank')"><i class="fab fa-dev"></i></button>
+                    <button class="btns social" onclick="window.open('https://stackoverflow.com/users/16922031/kertrix','_blank')"><i class="fab fa-stack-overflow"></i></button>
+                    <button class="btns social" onclick="navigator.clipboard.writeText('kertrix.github.io'); alert('Link copied')"><i class="fas fa-link"></i></button>     
+                </div>
+                <div data-aos="fade-left" class="col">
+                    <h3 class="fs-3">Contact</h3>
+                    <form action="https://formspree.io/f/moqrweev" method="POST" class="contact">
+                        <label>Your email:
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>Your message:
+                            <textarea name="message"></textarea required>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -118,7 +133,7 @@
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
         <li class="nav-item"><a href="#profile" class="nav-link px-2 text-muted">About</a></li>
-        <li class="nav-item"><a href="#links" class="nav-link px-2 text-muted">Links</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
     </ul>
     <p class="text-center text-muted">Copyright © 2021 Kertrix. Made with <i class="fas fa-heart"></i> by Kertrix.</p>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

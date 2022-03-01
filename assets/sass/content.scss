@@ -64,6 +64,7 @@ $bar-color: #04AA6D;
     color: #3498db;
     overflow: hidden;
     position: relative;
+    border: 2px solid gray;
  
     i{
         line-height: 40px;
@@ -75,5 +76,30 @@ $bar-color: #04AA6D;
 }
   
 .social:hover i{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+}
+
+.contact {
+    input, textarea {
+        background: transparent;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    button {
+        color: #FFF;
+        background: #111;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        min-width: 50px;
+        min-height: 32px;
+        padding: 0.75rem;
+
+        &:hover {
+            background-color: #FFF;
+            color: #111;
+        }
+    }
 }
