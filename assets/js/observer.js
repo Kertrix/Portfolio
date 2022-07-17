@@ -1,4 +1,3 @@
-
 let observer = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true)
         element = entries[0]["target"]
