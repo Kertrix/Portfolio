@@ -91,7 +91,7 @@ form select {
 
 .home {
   background: #333;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -250,7 +250,7 @@ form select {
   background: #f1f1f1;
   margin: 10px;
   border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
+  box-shadow: 0 5px 15px -5px #000;
   color: #3498db;
   overflow: hidden;
   position: relative;
