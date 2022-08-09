@@ -6,7 +6,7 @@ let observer = new IntersectionObserver(function(entries) {
         }
 }, { threshold: [1] });
 
-skills = document.getElementById('skills')
+skills = document.getElementById('languages')
 elements = skills.querySelectorAll(".skill")
 
 
