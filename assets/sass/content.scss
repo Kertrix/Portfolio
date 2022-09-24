@@ -1,6 +1,7 @@
 main {
-    background-color: #2e3440;
+    background-color: $nord-4;
     min-height: 100vh;
+    position: relative;
 }
 
 section {
@@ -24,18 +25,18 @@ section {
 
 
 .section-title {
-    font-size: 2.25rem;
+    font-size: calc(1.7rem + .6vw);
     margin-bottom: 0.5rem;
 }
 
 .profile {
-    h3 {
-        font-size: 2rem;
+    .name {
+        font-size: calc(1.5rem + .6vw);
         font-weight: bolder;
     }
 
     p {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     div {
@@ -43,9 +44,11 @@ section {
         justify-content: center;
     }
 
-    img {
+    .pfp {
+        border: 2px solid white;
         border-radius: 50%;
-        max-width: 371px;
+        width: 100%;
+        max-width: 300px;
         height: auto;
         margin: 10px;
     }
@@ -71,7 +74,7 @@ section {
 }
 
 .skill {
-    background-color: #3b4252;
+    background-color: $nord-2;
     height: 10rem;
     width: 12rem;
     border-radius: .75rem;
@@ -83,7 +86,7 @@ section {
     cursor: pointer;
 
     &:hover {
-        background-color: #4c566a;
+        background-color: $nord-1;
     }
 
     p {
@@ -100,4 +103,25 @@ section {
 
     }
 
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 88px;
+}
+
+.wave .shape-fill {
+    fill: $nord-4;
 }

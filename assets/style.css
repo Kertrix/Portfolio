@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   padding: 0;
@@ -90,6 +94,7 @@ meter {
 }
 
 header {
+  position: relative;
   background-color: #3b4252;
   min-height: 100vh;
   display: flex;
@@ -143,6 +148,7 @@ header {
 main {
   background-color: #2e3440;
   min-height: 100vh;
+  position: relative;
 }
 
 section {
@@ -164,24 +170,26 @@ section {
 }
 
 .section-title {
-  font-size: 2.25rem;
+  font-size: calc(1.7rem + 0.6vw);
   margin-bottom: 0.5rem;
 }
 
-.profile h3 {
-  font-size: 2rem;
+.profile .name {
+  font-size: calc(1.5rem + 0.6vw);
   font-weight: bolder;
 }
 .profile p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .profile div {
   display: flex;
   justify-content: center;
 }
-.profile img {
+.profile .pfp {
+  border: 2px solid white;
   border-radius: 50%;
-  max-width: 371px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   margin: 10px;
 }
@@ -204,7 +212,7 @@ section {
 }
 
 .skill {
-  background-color: #3b4252;
+  background-color: #434c5e;
   height: 10rem;
   width: 12rem;
   border-radius: 0.75rem;
@@ -227,6 +235,27 @@ section {
 .skill img:hover {
   transform: scale(1.1);
   transition: 0.2s all ease;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 88px;
+}
+
+.wave .shape-fill {
+  fill: #2e3440;
 }
 
 @media (max-width: 1400px) {
@@ -256,6 +285,10 @@ section {
 
   #about {
     display: block;
+  }
+
+  .profile {
+    margin-bottom: 3rem;
   }
 }
 
