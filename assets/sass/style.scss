@@ -1,20 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 body {
-    font-family: monospace;
+    font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0; 
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    body {
-      color: #eee;
-      background: #202124;
-    }
-  
-    body a {
-      color: #809fff;
-    }
-  }
+}
 
-@import "libs/reset.scss";
 @import "header.scss";
-@import "content.scss";
