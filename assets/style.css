@@ -90,7 +90,7 @@ meter {
 }
 
 header {
-  background-color: #4c566a;
+  background-color: #3b4252;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -141,15 +141,18 @@ header {
 }
 
 main {
-  background-color: #434c5e;
+  background-color: #2e3440;
+  min-height: 100vh;
+}
+
+section {
+  padding-top: 3rem;
 }
 
 #about {
-  padding-top: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
-  min-height: 100vh;
   text-align: center;
 }
 
@@ -183,6 +186,49 @@ main {
   margin: 10px;
 }
 
+#skills h3 {
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill {
+  background-color: #3b4252;
+  height: 10rem;
+  width: 12rem;
+  border-radius: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.skill:hover {
+  background-color: #4c566a;
+}
+.skill p {
+  font-size: 1.25rem;
+}
+.skill img {
+  height: 70px;
+}
+.skill img:hover {
+  transform: scale(1.1);
+  transition: 0.2s all ease;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 1140px;
@@ -206,6 +252,10 @@ main {
 @media (max-width: 576px) {
   .container {
     max-width: 540px;
+  }
+
+  #about {
+    display: block;
   }
 }
 
