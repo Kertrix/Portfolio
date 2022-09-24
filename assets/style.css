@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   color: white;
+  background-color: #2e3440;
 }
 
 /***
@@ -146,8 +147,6 @@ header {
 }
 
 main {
-  background-color: #2e3440;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -208,6 +207,7 @@ section {
 .skill-title {
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -256,6 +256,36 @@ section {
 
 .wave .shape-fill {
   fill: #2e3440;
+}
+
+footer {
+  margin: 1.5rem 1.5rem;
+  padding: 1rem 1rem;
+}
+
+.footer {
+  font-size: 17px;
+}
+
+.heart {
+  color: red;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1rem;
+}
+.links li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.copyright {
+  text-align: center;
 }
 
 @media (max-width: 1400px) {
