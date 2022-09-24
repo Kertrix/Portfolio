@@ -212,7 +212,7 @@ section {
 }
 
 .skill {
-  background-color: #434c5e;
+  background-color: #3b4252;
   height: 10rem;
   width: 12rem;
   border-radius: 0.75rem;
@@ -224,13 +224,14 @@ section {
   cursor: pointer;
 }
 .skill:hover {
-  background-color: #4c566a;
+  background-color: #434c5e;
 }
 .skill p {
   font-size: 1.25rem;
 }
 .skill img {
   height: 70px;
+  width: 70px;
 }
 .skill img:hover {
   transform: scale(1.1);

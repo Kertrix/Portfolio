@@ -73,7 +73,7 @@ section {
 }
 
 .skill {
-    background-color: $nord-2;
+    background-color: $nord-3;
     height: 10rem;
     width: 12rem;
     border-radius: .75rem;
@@ -85,7 +85,7 @@ section {
     cursor: pointer;
 
     &:hover {
-        background-color: $nord-1;
+        background-color: $nord-2;
     }
 
     p {
@@ -94,6 +94,7 @@ section {
 
     img {
         height: 70px;
+        width: 70px;
 
         &:hover {
             transform: scale(1.1);
