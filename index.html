@@ -1,167 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Kertrix</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202827160-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-202827160-1');
-    </script>
+    <title>Kertrix</title>
 </head>
-<body class="light-theme">
+<body>
     <header>
-        <div class="home">
-            <div class="header-text">
-                <span class="fs-2" id="print"></span>
-                <br>
-                <span class="header-title fs-1">Hey, I'm Kertrix<span class="fs-2" id="print">")</span>
-                <h2 class="header-subtitle fs-5">Junior developper | Python, HTML&CSS, Java</h2> 
-                <button class="header-btn" onclick="window.location.href='#profile'">More about me</button>
-            </div>
+        <div class="header-text">
+            <span id="print"></span>
+            <h1 class="header-title">Hey, I'm Kertrix<span id="print">")</span></h1>
+            <h2 class="header-subtitle">Junior developper | Python, HTML&CSS, Java</h2>
+            <button class="header-btn" onclick="window.location.href='#about'">More about me</button>
+        </div>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
         </div>
     </header>
-    <main class="container"> 
-        <section class="row pt-5" id="profile">
-            <div data-aos="fade-right" class="col-6">
-                <h3 class="fs-3">About me</h3>
-                <div class=" col-7 mx-auto">
-                    <img class="img-fluid rounded-circle mx-auto" src="assets/img/profil.png" alt="profile">
+    <main>
+        <div class="container">
+            <section id="about">
+                <div class="profile">
+                    <h3 class="section-title">About me</h3>
+                    <div>
+                        <img class="pfp" src="assets/img/profil.png" alt="profile">
+                    </div>
+                    <h3 class="name"><b>Kertrix</b></h3>
+                    <p>Hi, I'm Kertrix! A junior developer with a passion for development and Minecraft®!</p>
                 </div>
-                <br>
-                <h3 class="fs-3 text-center"><b>Kertrix</b></h3>
-                <p class="fs-5 text-center">Hi, I'm Kertrix! A junior developer with a passion for development and Minecraft®!</p>
-            </div>
-            <div id="languages" data-aos="fade-left" class="col-6">
-                <h3 class="fs-3">My projects are written in...</h3>
-
-                <div class="skills-content">
-                    <p>Python</p>
-                    <div class="bar">
-                        <div id="python" class="skill">90%</div>
+                <div class="langs">
+                    <h3 class="section-title">My projects are written in...</h3>
+                    <div class="bars">
+                        <div class="lang">
+                            <h3>Python</h3>
+                            <div class="bar python">90%</div>
+                        </div>
+                        <div class="lang">
+                            <h3>HTML</h3>
+                            <div class="bar html">60%</div>
+                        </div>
+                        <div class="lang">
+                            <h3>CSS</h3>
+                            <div class="bar css">50%</div>
+                        </div>
+                        <div class="lang">
+                            <h3>Javascript</h3>
+                            <div class="bar js">35%</div>
+                        </div>
+                        <div class="lang">
+                            <h3>Java</h3>
+                            <div class="bar java">10%</div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skills-content">
-                    <p>HTML</p>
-                    <div class="bar">
-                        <div id="html" class="skill">60%</div>
+            </section>
+            <section id="skills">
+                <h3 class="section-title">My skills</h3>
+                <div>
+                    <h4 class="skill-title">Programming languages</h4>
+                    <div class="skill-list">
+                        <div class="skill">
+                            <img src="assets/img/langs/python.svg" />
+                            <p>Python</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/langs/html.svg" />
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/langs/css.svg" />
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/langs/js.svg" />
+                            <p>Javascript</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/langs/bash.svg" />
+                            <p>Bash</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/langs/java.svg" />
+                            <p>Java</p>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="skills-content">
-                    <p>CSS</p>
-                    <div class="bar">
-                        <div id="css" class="skill">50%</div>
+                <div>
+                    <h4 class="skill-title">Frameworks & Libraries</h4>
+                    <div class="skill-list">
+                        <div class="skill">
+                            <img src="assets/img/frameworks/react.svg" />
+                            <p>React</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/frameworks/django.svg" />
+                            <p>Django</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/frameworks/flask.svg" />
+                            <p>Flask</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/frameworks/sass.svg" />
+                            <p>Sass</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/frameworks/bootstrap.svg" />
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/frameworks/tailwindcss.svg" />
+                            <p>Tailwindcss</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/frameworks/bulma.svg" />
+                            <p>Bulma</p>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="skills-content">
-                    <p>Javascript</p>
-                    <div class="bar">
-                        <div id="js" class="skill">35%</div>
+                <div>
+                    <h4 class="skill-title">Tools, DevOps & Cloud</h4>
+                    <div class="skill-list">
+                        <div class="skill">
+                            <img src="assets/img/tools/vscode.svg" />
+                            <p>Visual Studio Code</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/tools/intellij-idea.svg" />
+                            <p>Intellij Idea</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/tools/git.svg" />
+                            <p>Git</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/tools/github.svg" />
+                            <p>GitHub</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/tools/gitlab.svg" />
+                            <p>GitLab</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/tools/linux.svg" />
+                            <p>Linux</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/tools/ubuntu.svg" />
+                            <p>Ubuntu</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/img/tools/discord.svg" />
+                            <p>Discord</p>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="skills-content">
-                    <p>Java (Currently learning it)</p>
-                    <div class="bar">
-                        <div id="java" class="skill">10%</div>
-                    </div>
+            </section>
+            <section id="contact">
+                <h3 class="section-title">Contact</h3>
+                <div class="socials">
+                    <a href="https://github.com/kertrix/" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                    <a href="https://gitlab.com/kertrix/" target="_blank"><i class="fab fa-gitlab"></i>Gitlab</a>
+                    <a href="https://dev.to/kertrix" target="_blank"><i class="fab fa-dev"></i>Dev.to</a>
+                    <a href="https://stackoverflow.com/users/16922031/kertrix" target="_blank"><i class="fab fa-stack-overflow"></i>StackOverflow</a>
+                    <a onclick="navigator.clipboard.writeText('Kertrix#0977'); alert('Discord username copied!')"><i class="fab fa-discord"></i>Discord</a>
+                    <a onclick="navigator.clipboard.writeText('https://kertrix.github.io'); alert('Link copied!')"><i class="fas fa-link"></i>Link</a>
                 </div>
-            </div>
-        </section>
-        <section id="skills" class="row pt-5">
-            <h3 class="fs-3">Techniques & Tools</h3>
-            <div class="col text-center p-4">
-                <img style="max-height: 100px;" class="img-fluid" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="">
-                <h5 class="card-title"></h5>
-                <p class="card-text">I use frameworks like Bootstrap and Bulma to ensure that my designs are fully responsive.</p>
-            </div>
-            <div class="col text-center p-4">
-                <img style="max-height: 100px;" class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="">
-                <h5 class="card-title"></h5>
-                <p class="card-text">I use Sass so my code is neat and clean.</p>
-            </div>
-            <div class="col text-center p-4">
-                <img style="max-height: 100px;" class="img-fluid" src="assets/img/git.svg" alt="">
-                <h5 class="card-title"></h5>
-                <p class="card-text">I use Git so I can keep control of my work.</p>
-            </div>
-            <div class="col text-center p-4">
-                <img style="max-height: 100px;" class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/langfr-1024px-Visual_Studio_Code_1.35_icon.svg.png" alt="">
-                <h5 class="card-title"></h5>
-                <p class="card-text">I use IDEs like Visual Studio Code so I can work in a good environment.</p>
-            </div>
-            <div class="skill-list">
-                <div class="d-flex"></div>
-            </div>
-        </section>
-        <section class="row pt-4" id="contact">
-            <div class="col-4" data-aos="zoom-in">
-                <h3 class="fs-3">Links</h3>
-                <button class="btns social" onclick="window.open('https://github.com/kertrix','_blank')"><i class="fab fa-github"></i></button>
-                <button class="btns social" onclick="window.open('https://gitlab.com/kertrix','_blank')"><i class="fab fa-gitlab"></i></button>
-                <button class="btns social" onclick="window.open('https://dev.to/kertrix','_blank')"><i class="fab fa-dev"></i></button>
-                <button class="btns social" onclick="window.open('https://stackoverflow.com/users/16922031/kertrix','_blank')"><i class="fab fa-stack-overflow"></i></button>
-                <button class="btns social" onclick="navigator.clipboard.writeText('kertrix.github.io'); alert('Link copied')"><i class="fas fa-link"></i></button>     
-            </div>
-            <div data-aos="fade-left" class="col">
-                <h3 class="fs-3">Contact</h3>
-                <form action="https://formspree.io/f/moqrweev" method="POST" class="contact">
-                    <label>Your email:
-                        <input type="email" name="email" required>
-                    </label>
-                    <label>Your message:
-                        <textarea name="message"></textarea required>
-                    </label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </section>
-</main>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <p class="copyright">Copyright © 2021 Kertrix. Made with <i class="fa fa-heart"></i> by Kertrix.</p>
+        </div>
+        <p class="nord">Made with the <a href="https://www.nordtheme.com/" target="_blank">Nord</a> palette.</p>
+        <script src="https://kit.fontawesome.com/ac8668ddc2.js" crossorigin="anonymous"></script>
+        <script>
+            Typed.js
+            var typed = new Typed('#print', {
+                strings: ['print("', 'console.log("', 'System.out.println("'],
+                typeSpeed: 150,
+                backSpeed: 75,
+                loop: true,
+            });
+        </script>
+    </footer>
 </body>
-<footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#profile" class="nav-link px-2 text-muted">About</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
-    </ul>
-    <p class="text-center text-muted">Copyright © 2021 Kertrix. Made with <i class="fas fa-heart"></i> by Kertrix.</p>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/observer.js"></script>
-    <script type="module" src="assets/js/github_stats.js"></script>
-    <script>AOS.init();</script>
-    <script>
-        Typed.js
-        var typed = new Typed('#print', {
-            strings: ['print("', 'console.log("', 'System.out.println("'],
-            typeSpeed: 150,
-            backSpeed: 75,
-            loop: true,
-        });
-    </script>
-    <script>
-        // For dark theme activated by button
-        // <button class="btn-toggle-theme btns"><i class="fas fa-sun"></i></button>
-        // const btn = document.querySelector('.btn-toggle-theme');
-        // const icon = document.querySelector('.fa-sun');
-
-        // btn.addEventListener('click', function() {
-        //     document.body.classList.toggle('dark-theme'); 
-        //     icon.classList.toggle("fa-sun") 
-        //     icon.classList.toggle("fa-moon");
-        // })
-    </script>
-  </footer>
 </html>
