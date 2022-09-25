@@ -301,8 +301,14 @@ section {
   fill: #2e3440;
 }
 
+#contact {
+  text-align: center;
+}
+
 .socials {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 .socials a {
