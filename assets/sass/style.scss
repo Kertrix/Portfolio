@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+$nord-1: #4c566a; // lighter
+$nord-2: #434c5e; // light
+$nord-3: #3b4252; // dark
+$nord-4: #2e3440; // darker
+
+$python: 90%;
+$html: 60%;
+$css: 50%;
+$js: 35%;
+$java: 10%;
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
-    font-family: monospace;
+    font-family: 'Nunito', sans-serif;
     padding: 0;
-    margin: 0; 
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    body {
-      color: #eee;
-      background: #202124;
-    }
-  
-    body a {
-      color: #809fff;
-    }
-  }
+    margin: 0;
+    color: white; 
+    background-color: $nord-4;
+}
 
 @import "libs/reset.scss";
 @import "header.scss";
 @import "content.scss";
+@import "medias.scss";

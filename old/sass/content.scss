@@ -1,0 +1,105 @@
+$python: 90%;
+$html: 60%;
+$css: 50%;
+$js: 35%;
+$java: 10%;
+$bar-color: #04AA6D;
+
+
+.skills-content {
+    padding-top: 10px;
+  }
+  
+.bar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skill {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.python {width: $python; background-color: $bar-color; animation: load_python 3s normal forwards;}
+.html {width: $html; background-color: $bar-color; animation: load_html 3s normal forwards;}
+.css {width: $css; background-color: $bar-color; animation: load_css 3s normal forwards;}
+.js {width: $js; background-color: $bar-color; animation: load_js 3s normal forwards;}
+.java {width: $java; background-color: $bar-color; animation: load_java 3s normal forwards;}
+
+@keyframes load_python {
+    0% { width: 0; }
+    100% { width: $python; }
+}
+
+@keyframes load_html {
+    0% { width: 0; }
+    100% { width: $html; }
+  }
+
+@keyframes load_css {
+    0% { width: 0; }
+    100% { width: $css; }
+}
+
+@keyframes load_js {
+    0% { width: 0; }
+    100% { width: $js; }
+}
+
+@keyframes load_java {
+    0% { width: 0; }
+    100% { width: $java; }
+}
+
+.btns {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #000;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid gray;
+ 
+    i{
+        line-height: 40px;
+        font-size: 22px;
+        transition: 0.2s linear;
+        color: #2d3436;
+    }
+
+}
+  
+.social:hover i{
+    transform: translateY(-3px);
+}
+
+.contact {
+    input, textarea {
+        background: transparent;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    button {
+        color: #FFF;
+        background: #111;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        min-width: 50px;
+        min-height: 32px;
+        padding: 0.75rem;
+
+        &:hover {
+            background-color: #FFF;
+            color: #111;
+        }
+    }
+}

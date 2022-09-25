@@ -1,105 +1,224 @@
-$python: 90%;
-$html: 60%;
-$css: 50%;
-$js: 35%;
-$java: 10%;
-$bar-color: #04AA6D;
+main {
+    position: relative;
+}
 
+section {
+    padding-top: 3rem;
+}
 
-.skills-content {
-    padding-top: 10px;
-  }
-  
-.bar {
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+
+    text-align: center;
+}
+
+.container {
     width: 100%;
-    background-color: #ddd;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section-title {
+    font-size: calc(1.7rem + .6vw);
+    margin-bottom: 0.5rem;
+}
+
+.profile {
+    .name {
+        font-size: calc(1.5rem + .6vw);
+        font-weight: bolder;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pfp {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: start;
+
+    h3 {
+        margin-left: 10px;
+    }
+}
+
+.lang {
+    width: 100%;
+    height: 60px;
+}
+
+.bar {
+    text-align: right;
+    padding: 12px 10px 15px 10px;
+    background-color: $nord-3;
+    border-radius: 12px;
+}
+
+.python {width: $python;}
+.html {width: $html;}
+.css {width: $css;}
+.js {width: $js}
+.java {width: $java;}
+
+
+#skills {
+    h3 {
+        text-align: center;
+    }
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .skill {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-}
+    background-color: $nord-3;
+    height: 10rem;
+    width: 12rem;
+    border-radius: .75rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
 
-.python {width: $python; background-color: $bar-color; animation: load_python 3s normal forwards;}
-.html {width: $html; background-color: $bar-color; animation: load_html 3s normal forwards;}
-.css {width: $css; background-color: $bar-color; animation: load_css 3s normal forwards;}
-.js {width: $js; background-color: $bar-color; animation: load_js 3s normal forwards;}
-.java {width: $java; background-color: $bar-color; animation: load_java 3s normal forwards;}
-
-@keyframes load_python {
-    0% { width: 0; }
-    100% { width: $python; }
-}
-
-@keyframes load_html {
-    0% { width: 0; }
-    100% { width: $html; }
-  }
-
-@keyframes load_css {
-    0% { width: 0; }
-    100% { width: $css; }
-}
-
-@keyframes load_js {
-    0% { width: 0; }
-    100% { width: $js; }
-}
-
-@keyframes load_java {
-    0% { width: 0; }
-    100% { width: $java; }
-}
-
-.btns {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: #f1f1f1;
-    margin: 10px;
-    border-radius: 30%;
-    box-shadow: 0 5px 15px -5px #000;
-    color: #3498db;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid gray;
- 
-    i{
-        line-height: 40px;
-        font-size: 22px;
-        transition: 0.2s linear;
-        color: #2d3436;
+    &:hover {
+        background-color: $nord-2;
     }
 
-}
-  
-.social:hover i{
-    transform: translateY(-3px);
-}
-
-.contact {
-    input, textarea {
-        background: transparent;
-        color: white;
-        border-radius: 5px;
-        border: 1px solid gray;
+    p {
+        font-size: 1.25rem;
     }
 
-    button {
-        color: #FFF;
-        background: #111;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        min-width: 50px;
-        min-height: 32px;
-        padding: 0.75rem;
+    img {
+        height: 70px;
+        width: 70px;
 
         &:hover {
-            background-color: #FFF;
-            color: #111;
+            transform: scale(1.1);
+            transition: 0.2s all ease;
+        }
+
+    }
+
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 88px;
+}
+
+.wave .shape-fill {
+    fill: $nord-4;
+}
+
+#contact {
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    a {
+        padding: 1rem;
+        background-color: $nord-3;
+        border-radius: .5rem;
+        font-size: 17px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $nord-2;
+        }
+
+    }
+
+}
+
+
+footer {
+    margin: 1.5rem 1.5rem;
+    padding: 1rem 1rem;
+}
+
+.footer {
+    font-size: 17px;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+
+    li {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+.copyright {
+    text-align: center;
+}
+
+.nord {
+    a {
+        &:hover {
+            color: green;
         }
     }
 }
