@@ -306,6 +306,10 @@ footer {
   text-align: center;
 }
 
+.nord a:hover {
+  color: green;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 1140px;

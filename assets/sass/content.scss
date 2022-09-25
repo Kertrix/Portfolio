@@ -178,3 +178,11 @@ footer {
 .copyright {
     text-align: center;
 }
+
+.nord {
+    a {
+        &:hover {
+            color: green;
+        }
+    }
+}
