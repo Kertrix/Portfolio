@@ -52,6 +52,36 @@ section {
     }
 }
 
+.later {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.stripes {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: repeating-linear-gradient(
+        45deg,
+        yellow,
+        yellow 10px,
+        black 10px,
+        black 20px
+    );
+
+    p {
+        color: black;
+        font-size: 2rem;
+        background-color: white;
+        padding: 10px;
+        border-radius: 16px;
+    }
+}
+
 .bars {
     display: flex;
     flex-direction: column;
