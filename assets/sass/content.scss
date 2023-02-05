@@ -44,7 +44,7 @@ section {
 
     .pfp {
         border: 2px solid white;
-        border-radius: 50%;
+        border-radius: 25%;
         width: 100%;
         max-width: 300px;
         height: auto;
@@ -136,7 +136,7 @@ section {
     background-color: $nord-3;
     height: 10rem;
     width: 12rem;
-    border-radius: .75rem;
+    border-radius: 1.5rem;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -157,8 +157,8 @@ section {
         width: 70px;
 
         &:hover {
-            transform: scale(1.1);
-            transition: 0.2s all ease;
+            transform: scale(1.1) rotate(8deg);
+            transition: 0.4s all ease;
         }
 
     }
