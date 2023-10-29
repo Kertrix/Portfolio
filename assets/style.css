@@ -187,8 +187,6 @@ section {
   justify-content: center;
 }
 .profile .pfp {
-  border: 2px solid white;
-  border-radius: 25%;
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -293,15 +291,15 @@ section {
 .skill:hover {
   background-color: #434c5e;
 }
+.skill:hover img {
+  transform: scale(1.1) rotate(8deg);
+}
 .skill p {
   font-size: 1.25rem;
 }
 .skill img {
   height: 70px;
   width: 70px;
-}
-.skill img:hover {
-  transform: scale(1.1) rotate(8deg);
   transition: 0.4s all ease;
 }
 
@@ -407,11 +405,9 @@ footer {
   .container {
     max-width: 540px;
   }
-
   #about {
     display: block;
   }
-
   .profile {
     margin-bottom: 3rem;
   }
