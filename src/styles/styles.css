@@ -1,0 +1,17 @@
+body {
+  /* background-color: rgb(9 15 22); */
+}
+
+#background__noisy {
+  pointer-events:none;
+  opacity:.9;
+  background-blend-mode:normal;
+  background-size:25ww auto;
+  background-image:url("../../public/assets/background_noisy.webp");
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  height:100vh;
+  width:100vw
+}
