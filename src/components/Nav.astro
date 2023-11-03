@@ -1,0 +1,26 @@
+---
+import { Icon } from 'astro-icon'
+
+const iconLinks: { label: string; href: string; icon: string }[] = [
+	{ label: 'GitHub', href: 'https://github.com/Kertrix', icon: 'mdi:github' },
+  { label: 'GitLab', href: 'https://gitlab.com/Kertrix', icon: 'ri:gitlab-line' },
+  { label: 'Discord', href: 'https://discord.com', icon: 'ic:round-discord' },
+];
+---
+
+<nav class="w-full text-white">
+  <div class="mx-auto max-w-7xl py-8 px-4 flex items-center justify-between">
+    <p class="font-bold text-xl">Kertrix</p>
+    <div class="flex flex-row gap-3">
+      {iconLinks.map(({label, href, icon})=> (
+        <a href={href} target="_blank">
+          <span class="sr-only">{label}</span>
+          <Icon label={label}  class="w-7" name={icon} />
+        </a>
+      ))}
+      <a class="cursor-pointer" onclick="navigator.clipboard.writeText('https://kertrix.dev'); alert('Link copied!')">
+        <Icon label="link" class="w-7" name="mdi:web" />
+      </a>
+    </div>
+  </div>
+</nav>
