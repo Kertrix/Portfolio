@@ -1,5 +1,17 @@
+@import url('./fonts.css');
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/fonts/DPlusJakartaSans-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  /* background-color: rgb(9 15 22); */
+  background-color: rgb(9 15 22);
+  letter-spacing: 0.025em;
+  font-family: 'Satoshi', sans-serif;
 }
 
 #background__noisy {
@@ -7,11 +19,35 @@ body {
   opacity:.9;
   background-blend-mode:normal;
   background-size:25ww auto;
-  background-image:url("../../public/assets/background_noisy.webp");
+  background-image:url("../../assets/background_noisy.webp");
   position:fixed;
   top:0;
   left:0;
   z-index:-1;
   height:100vh;
   width:100vw
+}
+
+@keyframes animate-colors_gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+
+.title {
+  background-size: 200% 200%;
+  animation: colors_gradient 20s ease infinite;
+  background-image: radial-gradient(66.11% 66.11% at 50% 33.89%,hsla(0,0%,100%,.4) 0,hsla(0,0%,100%,0) 100%),linear-gradient(278.88deg,#fff,#66e3ff 28.83%,#a787ff 56.31%,#ffc875 86.49%);
+}
+
+
+
+.gradient-experience__1 {
+  background-image: linear-gradient(rgb(0, 194, 255), rgb(255, 41, 195));
 }

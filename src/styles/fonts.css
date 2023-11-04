@@ -1,0 +1,30 @@
+@font-face {
+  font-family:Satoshi;
+  src:url(/fonts/Satoshi-Regular.a12eb4fb.ttf) format("truetype");
+  font-weight:400;
+  font-style:normal
+}
+@font-face {
+  font-family:Satoshi;
+  src:url(/fonts/Satoshi-Medium.f3941e68.woff) format("truetype");
+  font-weight:500;
+  font-style:normal
+}
+@font-face {
+  font-family:Satoshi;
+  src:url(/fonts/Satoshi-Light.ce217c5d.woff) format("truetype");
+  font-weight:200;
+  font-style:normal
+}
+@font-face {
+  font-family:Satoshi;
+  src:url(/fonts/Satoshi-Bold.b28a04c4.woff) format("truetype");
+  font-weight:700;
+  font-style:normal
+}
+@font-face {
+  font-family:Satoshi;
+  src:url(/fonts/Satoshi-Black.28873509.woff) format("truetype");
+  font-weight:900;
+  font-style:normal
+}
